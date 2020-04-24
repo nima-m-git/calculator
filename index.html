@@ -3,38 +3,35 @@
     <head>
         <link rel='stylesheet' type='text/css' href='sheets.css'>
     </head>
+    <header>
+        
+    </header>
     <body>
         <div class='calculator'>
 
             <div id='screen'> </div>
 
             <div class='buttons'>
-                <div class='operators'>
-                    <button value='add'> + </button>
-                    <button value='subtract'> - </button>
-                    <button value='multiply'> x </button>
-                    <button value='divide'> % </button>
-                </div>
-                <div class='digits'>
-                    <button value='1'>1</button>
-                    <button value='2'>2</button>
-                    <button value='3'>3</button>
-                    <button value='4'>4</button>
-                    <button value='5'>5</button>
-                    <button value='6'>6</button>
-                    <button value='7'>7</button>
-                    <button value='8'>8</button>
-                    <button value='9'>9</button>
-                    <button value='0'>0</button>
-                    <button value='.'>.</button>
-                </div>
-                <div class='operations'>
-                    <button value='clear'> C </button>
-                    <button value='execute'> = </button>
-                </div>
-            </div>
+                <button type='button' class='operators' value='add'>+</button>
+                <button type='button' class='operators' value='subtract'>-</button>
+                <button type='button' class='operators' value='multiply'>&times</button>
+                <button type='button' class='operators' value='divide'>&divide</button>
 
-            <div class='message'></div>
+                <button type='button' class='digits' value='1'>1</button>
+                <button type='button' class='digits' value='2'>2</button>
+                <button type='button' class='digits' value='3'>3</button>
+                <button type='button' class='digits' value='4'>4</button>
+                <button type='button' class='digits' value='5'>5</button>
+                <button type='button' class='digits' value='6'>6</button>
+                <button type='button' class='digits' value='7'>7</button>
+                <button type='button' class='digits' value='8'>8</button>
+                <button type='button' class='digits' value='9'>9</button>
+                <button type='button' class='digits' value='0'>0</button>
+                <button type='button' class='digits' value='decimal'>.</button>
+
+                <button type='button' class='operations' value='clear' id='clear'> AC </button>
+                <button type='button' class='operations' value='execute' id='equals'> = </button>
+
         </div>
     </body>
 

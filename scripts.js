@@ -28,12 +28,34 @@ let currentNum =0, num1=0, num2=0, operator;
 const operation = document.querySelector('#operation');
 const screen = document.querySelector('#screen');
 const buttons = document.querySelectorAll('button');
-const message = document.querySelector('.message');
+const header = document.querySelector('header');
 
 
 buttons.forEach((button) => {
     button.addEventListener('click', update);
 });
+
+
+function update() {
+    if (this.classList.contains('digits')) {
+        screen.textContent += this.innerHTML;
+        currentNum += this.textContent; 
+
+    } else if (this.classList.contains('operators')) {
+        updateNums();
+        operator = this.value;
+        screen.textContent += this.textContent;
+        
+    } else if (this.classList.contains('operations')) {
+        
+        if (this.value == 'clear') {
+            clear();
+        } else if (this.value == 'execute') {
+            updateNums();
+            execute(); 
+        }
+    }
+}    
 
 function execute() {
     if (num1 && num2 && operator) {
@@ -52,27 +74,6 @@ function clear() {
     screen.textContent = '';
 };
 
-function update() {
-    if (this.parentElement.classList.contains('digits')) {
-        screen.textContent += this.innerHTML;
-        currentNum += this.textContent; // combine these?
-
-    } else if (this.parentElement.classList.contains('operators')) {
-        updateNums();
-        operator = this.value;
-        screen.textContent += this.textContent;
-        
-    } else if (this.parentElement.classList.contains('operations')) {
-        
-        if (this.value == 'clear') {
-            clear(); //make clear fxn, clear screen and reset variables num/ops
-        } else if (this.value == 'execute') {
-            updateNums();
-            execute(); //make fxn, operate, clear after x time?
-        }
-    }
-}    
-
 function updateNums() {
     if (!(num1)) {
         num1 = currentNum;
@@ -86,5 +87,7 @@ function brokeSystem() {
     error = document.createElement('h2');
     error.textContent = 'You broke the system';
     error.style.color = 'red';
-    message.appendChild(error);
+    error.style.textAlign = 'center';
+    error.style.fontSize = '50px';
+    header.appendChild(error);
 }
