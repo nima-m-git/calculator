@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nima-m-git/react_demo.git/static/css/main.8a18c7c4.chunk.css",
+    "main.js": "/nima-m-git/react_demo.git/static/js/main.46e6e251.chunk.js",
+    "main.js.map": "/nima-m-git/react_demo.git/static/js/main.46e6e251.chunk.js.map",
+    "runtime-main.js": "/nima-m-git/react_demo.git/static/js/runtime-main.3a914dc5.js",
+    "runtime-main.js.map": "/nima-m-git/react_demo.git/static/js/runtime-main.3a914dc5.js.map",
+    "static/js/2.8b267e20.chunk.js": "/nima-m-git/react_demo.git/static/js/2.8b267e20.chunk.js",
+    "static/js/2.8b267e20.chunk.js.map": "/nima-m-git/react_demo.git/static/js/2.8b267e20.chunk.js.map",
+    "index.html": "/nima-m-git/react_demo.git/index.html",
+    "precache-manifest.cd5d2b4d30ca380af18770a00a4b1e93.js": "/nima-m-git/react_demo.git/precache-manifest.cd5d2b4d30ca380af18770a00a4b1e93.js",
+    "service-worker.js": "/nima-m-git/react_demo.git/service-worker.js",
+    "static/css/main.8a18c7c4.chunk.css.map": "/nima-m-git/react_demo.git/static/css/main.8a18c7c4.chunk.css.map",
+    "static/js/2.8b267e20.chunk.js.LICENSE.txt": "/nima-m-git/react_demo.git/static/js/2.8b267e20.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a914dc5.js",
+    "static/js/2.8b267e20.chunk.js",
+    "static/css/main.8a18c7c4.chunk.css",
+    "static/js/main.46e6e251.chunk.js"
+  ]
+}
